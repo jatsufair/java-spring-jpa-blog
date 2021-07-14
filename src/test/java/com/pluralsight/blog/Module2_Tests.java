@@ -233,8 +233,8 @@ public class Module2_Tests {
 
             doc = Jsoup.parse(content);
         } catch (Exception e) {
-            //errorInfo = e.getLocalizedMessage();
-            //e.printStackTrace();
+            errorInfo = e.getLocalizedMessage();
+            e.printStackTrace();
         }
         String message = "Task 7: The template has errors - " + errorInfo + ".";
         assertNotNull(message, doc);
